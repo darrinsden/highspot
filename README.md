@@ -1,4 +1,5 @@
 ## SPECIFIC INSTALL NOTES
+# prerequisites
 Since I am unsure what you may be running this on
 (and the fact that i am running a beta OS)
 
@@ -57,6 +58,8 @@ Uploading to github took the longest time though.  as I had some stray existing 
 	* TODO: loading indicator should be absolutely positioned rather than at bottom of list
     * TODO: Possibly employ progressive image techniquies to load the image onto the page
 
+    added a finish indicator when you are done this may need to be updated
+    
 ### Dev TODOS:
 	* TODO: move search section into its own component
     * TODO: move card list into its own component

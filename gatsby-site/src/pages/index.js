@@ -25,10 +25,9 @@ class App extends Component {
     }
   }
  
-
   handleChange(event) {
     // TODO: why is setState not working for me in this instance?
-    // this.setState({value: event.target.value});
+    // this.setState({searchTerm: event.target.value});
     api.searchTerm = event.target.value;
   }
 
@@ -60,10 +59,14 @@ class App extends Component {
           })
         }
       }
+
+      
     })
   }
 
-  searchList() {
+  // TODO: BUG: search is a touch wonky.. for some reason if a search is returned that is a small number of results, they don’t display
+  
+  searchCardList() {
     this.setState({
       cards: [],
       hasMoreItems: true,
@@ -88,7 +91,7 @@ class App extends Component {
       items.push(
         <article className="card" key={i}>
           <div className="image-container">
-            <img src={card[1].imageUrl} width="150" />
+            <img src={card[1].imageUrl} width="150" alt={card[1].name}/>
           </div>
           <div className="text-container">
             <div className="small">
@@ -109,8 +112,16 @@ class App extends Component {
     })
     
 
-    //TODO: move search section into its own component
-    //TODO: HEADER & SEARCH should stay fixed at the top of the screen
+    // TODO: move search section into its own component
+    // TODO: move card list into its own component
+
+    // SUGGESTION: HEADER & SEARCH should stay fixed at the top of the screen
+    // SUGGESTION: Add some sort of graphical header to create a bit more impact
+    // SUGGESTION: Add a modal to the cards to display full information OR take them to a new page with that info for the particular card
+    // SUGGESTION: HEADER & SEARCH should stay fixed at the top of the screen possibly have the search as part of the header
+    // SUGGESTION: loading indicator should be absolutely positioned rather than at bottom of list
+    // SUGGESTION: Possibly employ progressive image techniquies to load the image onto the page
+
 
     return (
       <Layout>
@@ -119,7 +130,7 @@ class App extends Component {
           <div className="left">Search the card list</div>
           <div className="right">
             <input type="text" onChange={this.handleChange} />
-            <button onClick={this.searchList.bind(this)}>Search</button>
+            <button onClick={this.searchCardList.bind(this)}>Search</button>
           </div>
         </div>
 
