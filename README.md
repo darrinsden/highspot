@@ -40,6 +40,8 @@ Search took a bit as it wasn’t returning what i wanted, modified it a number o
 
 Am not spending a super amount of time with design, as the functionality is more important on this.  And used to working with a designer on it, it becomes wasted work as the designs dont align.  As colors are so very much an opinion, I tend to keep things in greyscales at first.
 
+Uploading to github took the longest time though.  as I had some stray existing .git files in directories that were not getting added to the repo
+
 - - - -
 
 ### browser media queries
@@ -53,6 +55,7 @@ Am not spending a super amount of time with design, as the functionality is more
 	* TODO: Add a modal to the cards to display full information OR take them to a new page with that info for the particular card
 	* TODO: HEADER & SEARCH should stay fixed at the top of the screen possibly have the search as part of the header
 	* TODO: loading indicator should be absolutely positioned rather than at bottom of list
+    * TODO: Possibly employ progressive image techniquies to load the image onto the page
 
 ### Dev TODOS:
 	* TODO: move search section into its own component
@@ -62,3 +65,7 @@ Am not spending a super amount of time with design, as the functionality is more
 
 ### Bug TODOS:
 	* TODO: search is a touch wonky.. for some reason if a search is returned that is a small number of results, they don’t display
+
+### General Considerations:
+    * The page may slow down if the data set is much larger... I have not noticed a slowdown, but as more stuff is added to the page, it will happen.
+    Suggestion is to perhaps remove ites form the top of the list as you scroll down, and then to add items as you scroll up.  This also lends to the approach of have a search theat is always in view.
