@@ -35,8 +35,10 @@ download zip (or clone) from
 ### Observations
 Search took a bit as it wasn’t returning what i wanted, modified it a number of different ways.. 
 	see TODO for issue
-	including passing the results to a new page
+	including passing the results to a new page.
 		I didnt like that one though and rejected after a bit
+
+Am not spending a super amount of time with design, as the functionality is more important on this.  And used to working with a designer on it, it becomes wasted work as the designs dont align.  As colors are so very much an opinion, I tend to keep things in greyscales at first.
 
 - - - -
 
@@ -46,13 +48,17 @@ Search took a bit as it wasn’t returning what i wanted, modified it a number o
 	* 2 at 800px
 	* 1 at 500px
 
-### Design TODOS:
+### Design TODOS: (suggestions)
+    * TODO: Add some sort of graphical header to create a bit more impact
 	* TODO: Add a modal to the cards to display full information OR take them to a new page with that info for the particular card
 	* TODO: HEADER & SEARCH should stay fixed at the top of the screen possibly have the search as part of the header
 	* TODO: loading indicator should be absolutely positioned rather than at bottom of list
 
 ### Dev TODOS:
 	* TODO: move search section into its own component
+    * TODO: move card list into its own component
+
+    rather have the page itself super light and then include the components as needed
 
 ### Bug TODOS:
 	* TODO: search is a touch wonky.. for some reason if a search is returned that is a small number of results, they don’t display
