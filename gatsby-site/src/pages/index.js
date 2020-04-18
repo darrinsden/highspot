@@ -1,10 +1,11 @@
 import React, { Component } from "react"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+// page specific css
 import "../components/highspot.css"
 
+// import of externernal packages
 import InfiniteScroll from "react-infinite-scroller"
 import qwest from "qwest"
 
@@ -39,7 +40,9 @@ class App extends Component {
     if (this.state.nextHref) {
       url = this.state.nextHref 
     }
-
+    
+    // grabs first x number of cards from API
+    // and adds them to a cards array in state
     qwest.get(url).then(function (xhr, resp) {
       if (resp) {
         var cards = self.state.cards
@@ -58,14 +61,11 @@ class App extends Component {
             hasMoreItems: false,
           })
         }
-      }
-
-      
+      }  
     })
   }
 
   // TODO: BUG: search is a touch wonky.. for some reason if a search is returned that is a small number of results, they don’t display
-  
   searchCardList() {
     this.setState({
       cards: [],
@@ -85,8 +85,8 @@ class App extends Component {
       </div>
     )
 
+    // builds up a list of the cards html to add to the display
     var items = [];
-
     this.state.cards.map((card, i) => {
       items.push(
         <article className="card" key={i}>
