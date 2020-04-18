@@ -1,0 +1,133 @@
+
+.searchbar {
+    background-color: #efefef;
+    padding:5px;
+    margin:10px 0;
+    border: 1px solid #ccc;
+    border-radius:5px;
+    color:#121212;
+}
+
+.searchbar .left{
+    width:calc(100% - 300px);
+    display:inline-block;
+    text-align:left
+}
+.searchbar .right{
+    width: 300px;
+    display:inline-block;
+    text-align:right;
+    color:#121212;
+}
+
+.searchbar input{
+  width: calc(100% - 120px);
+  padding: 3px 10px;
+  font-size: 12px;
+}
+.searchbar button{
+    border: 1px solid #ccc;
+    color:#121212;
+    cursor:pointer;
+    width: 100px;
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+.searchbar button:hover{
+    color:#fff;
+    background-color: #bbb;
+}
+.searchbar input{
+    margin-right:10px
+}
+.card-container {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.card {
+  flex: 0 1 23%;
+  border: 1px solid #ccc;
+  border-radius:5px;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.image-container{
+  background-color: #efefef;
+  text-align: center;
+  height: 250px;
+}
+.image-container img {
+  margin:0;
+}
+.text-container{
+  padding:15px;
+}
+.small {
+  font-size: 12px;
+  margin-bottom: 10px;
+  line-height: 14px;
+  margin-left: 10px;
+}
+.small span {
+  font-weight: bold;
+  margin-left: -10px;
+}
+
+.finished {
+  width: 100%;
+  color: #121212;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.overlay {
+  width: 100%;
+  padding-top:50px;
+}
+
+.overlay__inner {
+  text-align: center;
+}
+
+.spinner {
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.05);
+  border-top-color: #000;
+  animation: spin 1s infinite linear;
+  border-radius: 100%;
+  border-style: solid;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .card {
+    flex: 0 1 30%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .card {
+    flex: 0 1 47%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .card {
+    flex: 0 1 100%;
+  }
+}
