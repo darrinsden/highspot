@@ -40,11 +40,16 @@ Search took a bit as it wasn’t returning what i wanted, modified it a number o
 	investigated passing the results to a new page.
 		I didnt like that one though and rejected after a bit
 
-Am not spending a super amount of time with design, as the functionality is more important on this.  And used to working with a designer on it, it becomes wasted work as the designs dont align.  
+Am not spending a super amount of time with design, as the functionality is more important on this.  
+
+And since I am used to working with a designer on the look, it becomes wasted work as the designs dont align.  
 
 As colors are so very much an opinion, I tend to keep things in greyscales at first.
 
 Uploading to github took the longest time though.  as I had some stray existing .git files in directories that were not getting added to the repo
+
+Had a bug with the search when the api returned a small amount of data,
+but fixed that this morning
 
 - - - -
 
@@ -58,6 +63,7 @@ Uploading to github took the longest time though.  as I had some stray existing 
     TODO: Add some sort of graphical header to create a bit more impact
 	TODO: Add a modal to the cards to display full information OR take them to a new page with that info for the particular card
 	TODO: HEADER & SEARCH should stay fixed at the top of the screen possibly have the search as part of the header
+	TODO: Add some sort of filtering to the list.. enhanced search
 	TODO: loading indicator should be absolutely positioned rather than at bottom of list
     TODO: Possibly employ progressive image techniquies to load the image onto the page
 
@@ -65,12 +71,6 @@ Uploading to github took the longest time though.  as I had some stray existing 
     
 ### Dev TODOS:
 	TODO: move search section into its own component
-    TODO: move card list into its own component
-
-    rather have the page itself super light and then include the components as needed
-
-### Bug TODOS:
-	TODO: search is a touch wonky.. for some reason if a search is returned that is a small number of results, they don’t display
 
 ### General Considerations:
     The page may slow down if the data set is much larger... 
