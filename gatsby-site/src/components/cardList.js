@@ -21,7 +21,7 @@ class CardList extends Component {
     }
   }
 
-  handleChange(event) {
+  handleChange = (event) => {
     // TODO: why is setState not working for me in this instance?
     // actaully got it working, but reverted it as it broke search
     api.searchTerm = event.target.value
@@ -61,19 +61,20 @@ class CardList extends Component {
         }
       })
       .catch(function (e, xhr, response) {
+        // TODO: display a error message to the user
         console.log(e)
       })
   }
 
   searchCardList() {
-    this.initializeState()
+    this.initializeState();
   }
 
   clearSearch() {
-    api.searchTerm = ""
-    var input = document.getElementById("search")
-    input.value = ""
-    this.initializeState()
+    api.searchTerm = "";
+    var input = document.getElementById("search");
+    input.value = "";
+    this.initializeState();
   }
 
   initializeState() {

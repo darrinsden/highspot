@@ -78,3 +78,5 @@ but fixed that this morning
     Suggestion is to perhaps remove items from the top of the list as you scroll down, and then to add items as you scroll up.
     
     This also lends to the approach of have a search theat is always in view.
+
+	For the search, I had added a search as you typed, but removed that as the display showed the wrong data if you typed too fast.
