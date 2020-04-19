@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 // page specific css
 import "../components/highspot.css"
 
-// import of externernal packages
+// import of external packages
 import InfiniteScroll from "react-infinite-scroller"
 import qwest from "qwest"
 
