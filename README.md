@@ -33,9 +33,10 @@ download zip (or clone) from
 	http://localhost:8000
 
 ### Observations
-Search took a bit as it wasn’t returning what i wanted, modified it a number of different ways.. 
-	see TODO for issue
-	including passing the results to a new page.
+Search took a bit as it wasn’t returning what i wanted, modified it a number of different ways. 
+	(see TODO for issue)
+	
+	investigated passing the results to a new page.
 		I didnt like that one though and rejected after a bit
 
 Am not spending a super amount of time with design, as the functionality is more important on this.  And used to working with a designer on it, it becomes wasted work as the designs dont align.  
