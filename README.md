@@ -72,4 +72,6 @@ Uploading to github took the longest time though.  as I had some stray existing 
 
 ### General Considerations:
     * The page may slow down if the data set is much larger... I have not noticed a slowdown, but as more stuff is added to the page, it will happen.
-    Suggestion is to perhaps remove ites form the top of the list as you scroll down, and then to add items as you scroll up.  This also lends to the approach of have a search theat is always in view.
+    Suggestion is to perhaps remove items from the top of the list as you scroll down, and then to add items as you scroll up.
+    
+    This also lends to the approach of have a search theat is always in view.
