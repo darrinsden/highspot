@@ -1,9 +1,10 @@
 ## SPECIFIC INSTALL NOTES
 ### prerequisites
-Since I am unsure what you may be running this on. 
-(and the fact that i am running a beta OS)
 
 I wanted to include a few install notes that i went through. this may not be necessary at all
+
+Since I am unsure what you may be running this on. 
+(and the fact that i am running a beta OS)
 
 xcode-select --install
 via:
@@ -14,7 +15,7 @@ https://ma.ttias.be/mac-os-xcrun-error-invalid-active-developer-path-missing-xcr
 	sudo n stable
 
 	npm install react-infinite-scroller --save
-	nom install quest --save
+	nom install qwest --save
 
 - - - -
 
