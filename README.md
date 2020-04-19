@@ -1,10 +1,9 @@
 ## SPECIFIC INSTALL NOTES
 ### prerequisites
-Since I am unsure what you may be running this on
+Since I am unsure what you may be running this on. 
 (and the fact that i am running a beta OS)
 
-I wanted to include a few install notes that i went through
-this may not be necessary at all
+I wanted to include a few install notes that i went through. this may not be necessary at all
 
 xcode-select --install
 via:
@@ -39,7 +38,9 @@ Search took a bit as it wasn’t returning what i wanted, modified it a number o
 	including passing the results to a new page.
 		I didnt like that one though and rejected after a bit
 
-Am not spending a super amount of time with design, as the functionality is more important on this.  And used to working with a designer on it, it becomes wasted work as the designs dont align.  As colors are so very much an opinion, I tend to keep things in greyscales at first.
+Am not spending a super amount of time with design, as the functionality is more important on this.  And used to working with a designer on it, it becomes wasted work as the designs dont align.  
+
+As colors are so very much an opinion, I tend to keep things in greyscales at first.
 
 Uploading to github took the longest time though.  as I had some stray existing .git files in directories that were not getting added to the repo
 
