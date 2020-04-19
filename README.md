@@ -10,12 +10,12 @@ xcode-select --install
 via:
 https://ma.ttias.be/mac-os-xcrun-error-invalid-active-developer-path-missing-xcrun/
 
-sudo npm install npm -g
-npm install -g n
-sudo n stable
+	sudo npm install npm -g
+	npm install -g n
+	sudo n stable
 
-npm install react-infinite-scroller --save
-nom install quest --save
+	npm install react-infinite-scroller --save
+	nom install quest --save
 
 - - - -
 
