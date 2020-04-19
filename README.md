@@ -1,5 +1,5 @@
 ## SPECIFIC INSTALL NOTES
-# prerequisites
+### prerequisites
 Since I am unsure what you may be running this on
 (and the fact that i am running a beta OS)
 
